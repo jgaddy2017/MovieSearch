@@ -10,7 +10,7 @@ function getSearchMovieInfo(movieName){
     let searchingMessage = createSearchingMessage();
     $('.primarySearch').html(searchingMessage);
 
-    let searchUrl = `https://api.themoviedb.org/3/search/movie?api_key=${myAPIKey}&language=en-US&query=${movieName}&page=1&include_adult=false`;
+    let searchUrl = `https://api.themoviedb.org/3/search/movie?api_key=${config.MY_KEY}&language=en-US&query=${movieName}&page=1&include_adult=false`;
     $.ajax({
         dataType: 'json',
         type: 'GET',
@@ -24,7 +24,7 @@ function getSearchMovieInfo(movieName){
 }
 
 function getGenreKey(){
-    let searchUrl = `https://api.themoviedb.org/3/genre/movie/list?api_key=${myAPIKey}&language=en-US`;
+    let searchUrl = `https://api.themoviedb.org/3/genre/movie/list?api_key=${config.MY_KEY}&language=en-US`;
     $.ajax({
         dataType: 'json',
         type: 'GET',
@@ -36,7 +36,7 @@ function getGenreKey(){
 }
 
 function searchForGenreSuggestions(genreIds){
-    let searchUrl = `https://api.themoviedb.org/3/discover/movie?api_key=${myAPIKey}&language=en-US&sort_by=popularity.asc&include_adult=false&include_video=false&page=1&with_genres=${genreIds}`;
+    let searchUrl = `https://api.themoviedb.org/3/discover/movie?api_key=${config.MY_KEY}&language=en-US&sort_by=popularity.asc&include_adult=false&include_video=false&page=1&with_genres=${genreIds}`;
     $.ajax({
         dataType: 'json',
         type: 'GET',
