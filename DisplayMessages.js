@@ -33,6 +33,8 @@ function createPrimaryMessage(record){
 
     return `<div>
                 <p class="primaryMovieTitle headerFont">${record.original_title}</h3>
+                <br>
+                    <img class="moviePicture" src="https://image.tmdb.org/t/p/w500${record.poster_path}" />
                 <p class="primaryOverviewHeader headerFont">Overview</p>
                 <p class="primaryOverviewInfo infoFont">${record.overview}<p>
                 <div class="primaryInfoDivContainer">

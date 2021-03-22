@@ -98,7 +98,7 @@ function getSearchMovieInfo(movieName){
     let searchingMessage = createSearchingMessage();
     $('.primarySearch').html(searchingMessage);
 
-    let searchUrl = `https://api.themoviedb.org/3/search/movie?api_key=31f2f00c94350506de63cd3ad7d7e388&language=en-US&query=${movieName}&page=1&include_adult=false`;
+    let searchUrl = `https://api.themoviedb.org/3/search/movie?api_key=${key}&language=en-US&query=${movieName}&page=1&include_adult=false`;
     $.ajax({
         dataType: 'json',
         type: 'GET',
@@ -182,4 +182,18 @@ function onEnterPress(){
                                 </select>
                             </div>
 
+    */
+
+
+        /*
+    $('#suggestionType').change(function(){
+        console.log("suggestion Change");
+        let optionSelected = $("option:selected", this);
+        let valueSelected = this.value;
+        if(valueSelected == 'name'){
+            reDisplaySecondaryMessage();
+        }else{
+            displayGenres();
+        }
+    });
     */
