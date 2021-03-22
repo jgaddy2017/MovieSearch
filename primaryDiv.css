@@ -1,0 +1,253 @@
+/*
+function createPrimaryMessage(record){
+    return `<div>
+                <p class="primaryMovieTitle">${record.original_title}</h3>
+                <p class="primaryOverviewHeader">Overview</p>
+                <p class="primaryOverviewInfo">${record.overview}<p>
+                <div class="primaryInfoDiv">
+                    <p class="primaryInfoheader">Release Date</p>
+                    <p class="primaryStatedInfo">${record.release_date}</p>
+                </div>
+                <div class="primaryInfoDiv">
+                    <p class="primaryInfoheader">Vote Average</p>
+                    <p class="primaryStatedInfo">${record.vote_average}</p>
+                </div>
+                <div class="primaryInfoDiv">
+                    <p class="primaryInfoheader">Vote Count</p>
+                    <p class="primaryStatedInfo">${record.vote_count}</p>
+                </div>
+            </div>`;
+}
+*/
+.primaryMovieTitle{
+    text-align: center;
+    font-size: 35px;
+}
+.primaryOverviewHeader{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+.primaryOverviewInfo{
+    text-align: center;
+    font-size: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+.primaryInfoDivContainer{
+    vertical-align: top;
+    line-height: normal;
+}
+.primaryInfoDiv{
+    vertical-align: top;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    font-size: 28px;
+}
+.primaryInfoheader{
+    text-decoration: underline;
+}
+
+
+.secondaryPicks{
+    border: black solid 2px;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.secondaryPicks:hover{
+    text-decoration: underline;
+    border: white solid 2px;
+}
+
+.welcomeHeader{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+.welcomeInfo{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.blankSearchHeader{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+.blankSearchInfo{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.primarySorryHeader{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+.primarySorryInfo{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.suggestionHeader{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+
+.suggestionInfo{
+    display: inline-block;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.suggestionSelect{
+    display: inline-block;
+}
+
+.suggestionGenres{
+    display: inline-block;
+}
+.SecondaryDiv{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: center;
+}
+
+@media only screen and (min-width: 640px) {
+.primaryMovieTitle{
+    text-align: center;
+    font-size: 35px;
+}
+.primaryOverviewHeader{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+.primaryOverviewInfo{
+    text-align: center;
+    font-size: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+.primaryInfoDivContainer{
+    vertical-align: top;
+    line-height: normal;
+}
+.primaryInfoDiv{
+    vertical-align: top;
+    text-align: center;
+    display: inline-block;
+    width: 24%;
+    font-size: 28px;
+}
+.primaryInfoheader{
+    text-decoration: underline;
+}
+
+
+.secondaryPicks{
+    border: black solid 2px;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.secondaryPicks:hover{
+    text-decoration: underline;
+    border: white solid 2px;
+}
+
+.welcomeHeader{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+.welcomeInfo{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.blankSearchHeader{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+.blankSearchInfo{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.primarySorryHeader{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+.primarySorryInfo{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.suggestionHeader{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+
+.suggestionInfo{
+    display: inline-block;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.suggestionSelect{
+    display: inline-block;
+}
+
+.suggestionGenres{
+    display: inline-block;
+}
+.SecondaryDiv{
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    text-align: center;
+}
+}
+

@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Movie Search</title>
+  <meta name="description" content="Movie Search">
+  <meta name="Smith Gaddy" content="MovieSearch">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="primaryDiv.css">
+  <link rel="stylesheet" href="historyDiv.css">
+
+</head>
+
+<body>
+    <div id="topOfThePageDiv">
+        <h1 class="webTitle headerFont">Movie Search</h1>
+
+        <form id="searchForm">
+            <input type="text" id="movieName" placeholder="Enter Search Movie Here" />
+            <button type="submit" id="movieSearch" >Search</button>
+            <button type="button" id="historyButton">Show History</button>
+        </form>
+    </div>
+    <div id="infomationDiv">
+        <div id="searchInfoDiv">
+            
+            <div class="primarySearch"></div>
+            <div class="secondaryInfoType"></div>
+            <div class="secondarySearch"></div>
+        </div>
+        <div id="searchHistoryDiv" class="hideDiv">
+            <p class="searchHistoryHeader headerFont">Search History</p>
+            <div class="searchHistory"></div>
+        </div>
+    </div>
+    
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./API_Key.js"></script>
+    <script src="./DisplayMessages.js"></script>
+    <script src="./API.js"></script>
+    <script src="./History.js"></script>
+    <script src="./Suggestions.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
